@@ -1,10 +1,11 @@
+const settings = require("./config.json"); 
 const Discord = require('discord.js');
 const initcmd = settings.initcmd;
 const id = settings.id;
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Hi ${client.user.tag} , This Code by : Speedy `);
+  console.log(`Hi ${client.user.tag} , This Code by : Kahrbaa `);
   console.log('')
   console.log(`i Have  [ " ${client.guilds.size} " ]`);
 });
