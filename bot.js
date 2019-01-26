@@ -1,17 +1,22 @@
-const Discord = require("discord.js");
+const prefix ="!";
+const Discord = require('discord.js');
 const client = new Discord.Client();
-const client2 = new Discord.Client();
 
-
-
-client.on('message', msg => {
-  if (msg.content === 'السلام عليكم') {
-    msg.reply('وعليكم السلام ورحمة الله وبركاته.');
-  }
+client.on('ready', () => {
+ console.log("Bot Online"); 
+console.log("log");
 });
 
 
+ 
 
-
-client.login(process.env.TOKEN);
-
+ 
+client.on('ready', () => { //playing
+    client.user.setGame(`مياوو سبيدي الحيلوااهه هيناا(:	`,'https://www.twitch.tv/faresgameryt');
+    client.user.setStatus('Online')
+});
+ 
+ 
+ 
+ 
+ client.login(process.env.TOKEN);
